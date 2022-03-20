@@ -11,3 +11,12 @@ set splitright
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive
+
+
+" keybindings
+tnoremap <esc> <c-\><c-n>
+
+
+" terminal config
+autocmd TermOpen * setlocal nonumber norelativenumber
+autocmd TermOpen * startinsert
