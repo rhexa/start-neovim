@@ -1,3 +1,8 @@
+lua require('plugins')
+lua require('keybindings')
+lua require('configs')
+
+" default
 set number relativenumber
 
 filetype plugin indent on
@@ -11,12 +16,4 @@ set splitright
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive
-
-
-" keybindings
-tnoremap <esc> <c-\><c-n>
-
-
-" terminal config
-autocmd TermOpen * setlocal nonumber norelativenumber
-autocmd TermOpen * startinsert
+set path+=**                " fuzzy finder
